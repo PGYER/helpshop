@@ -22,7 +22,7 @@ defaultConfig {
 }
 ```
 
-2. 在项目下build.gradle中添加
+2. 在项目下 build.gradle 中添加
 
 ```
 allprojects {
@@ -33,7 +33,7 @@ allprojects {
 }
 ```
 
-3. 在app/build.gradle中添加
+3. 在 app/build.gradle 中添加
 
 ```
 dependencies {
@@ -42,7 +42,7 @@ dependencies {
 }
 ```
 
-4. 在 application 中集成
+4. 在 Application 类中集成
 
 ```java
 import com.pgyer.help_shop_library.ShopHelpManager;                                                                 
@@ -55,7 +55,7 @@ public class {当前应用的application} extends Application {
 }
 ```
 
-5. 在 `AndroidManifest.xml` 注意修改 android:name="{当前应用的application}" 此处的名字对应上面继承 `Application` 的类名 ,添加 `ZK_HM_KEY`，添加是否添加检查更新的开关                 
+5. 在 `AndroidManifest.xml` 注意修改 `android:name="{当前应用的application}"` 此处的名字对应上面继承 `Application` 的类名 ,添加 `ZK_HM_KEY`，添加是否添加检查更新的开关                 
 
 ```
  <application
