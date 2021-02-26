@@ -10,7 +10,7 @@
 
 例如：
 
-```json
+```
 compileSdkVersion 29
 buildToolsVersion "29.0.3"
 defaultConfig {
@@ -22,7 +22,7 @@ defaultConfig {
 
 2. 在项目下build.gradle中添加
 
-```json
+```
 allprojects {
    repositories {
         ...
@@ -33,7 +33,7 @@ allprojects {
 
 3. 在app/build.gradle中添加
 
-```json
+```
 dependencies {
      ...
      implementation 'com.pgyer:helpshop:1.0.6'
