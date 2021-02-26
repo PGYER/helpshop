@@ -4,9 +4,11 @@
 
 购物助手SDK可以监听淘宝、京东、饿了么、美团、美团外卖等几个常用电商App的商品信息来获取相应的商品购物券，并向用户进行提示，帮助用户购物省钱。用户购物下单获得的返利，可以向开发者（流量主）进行结算。
 
-### 准备工作
+### 集成步骤
 
-1. 将 compileSdkVersion ，buildToolsVersion和 targetSdkVersion对应的版本号改为30以下（因为SDK中用到的 setGravity shouldn't be called on text toasts the values won't be used在30以上版本已经被不能用。详情https://developer.android.com/reference/android/widget/Toast#setGravity(int,%20int,%20int) 请开发者放心集成）
+1. 将 `compileSdkVersion`、`buildToolsVersion` 和 `targetSdkVersion` 对应的版本号改为30以下
+
+原因：SDK 中用到 `Toast`类 中的 `setGravity` 在30以上版本已经被不能用，会报错 shouldn't be called on text toasts the values won't be used。详情请见： https://developer.android.com/reference/android/widget/Toast#setGravity(int,%20int,%20int)
 
 例如：
 
