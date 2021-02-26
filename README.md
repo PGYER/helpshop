@@ -8,7 +8,7 @@
 
 1. 将 `compileSdkVersion`、`buildToolsVersion` 和 `targetSdkVersion` 对应的版本号改为30以下
 
->>> 原因：SDK 中用到 `Toast`类 中的 `setGravity` 在30以上版本已经被不能用，会报错 shouldn't be called on text toasts the values won't be used。详情请见： https://developer.android.com/reference/android/widget/Toast#setGravity(int,%20int,%20int)
+> 原因：SDK 中用到 `Toast`类 中的 `setGravity` 在30以上版本已经被不能用，会报错 shouldn't be called on text toasts the values won't be used。详情请见： https://developer.android.com/reference/android/widget/Toast#setGravity(int,%20int,%20int)
 
 例如：
 
